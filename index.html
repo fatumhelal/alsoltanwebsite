@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      /* Background image with dark overlay */
+      background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 200px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+      display: inline-block;
+      position: relative;
+    }
+
+    header h1::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #f1c40f; /* gold underline */
+      margin: 12px auto 0 auto;
+      border-radius: 2px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+
+    #about {
+      max-width: 700px;
+      text-align: center;
+      padding: 30px;
+      background: rgba(255,255,255,0.1); /* translucent box */
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    #about h2 { margin-top: 0; color: #f1c40f; }
+
+    #about p { margin: 1rem 0; line-height: 1.6; }
+
+    /* Social row */
+    .social-links {
+      margin: 40px auto;
+      display: flex;
+      justify-content: space-between; /* left - center - right */
+      align-items: center;
+      max-width: 700px;
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .social-links img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .social-links img:hover {
+      transform: scale(1.15);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    }
+
+    .contact-text {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #fff;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Profile picture -->
+  <img src="IMG_1876.JPG" alt="Profile Picture" class="profile-pic">
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Mr Alsoltan.</h1>
+  </header>
+
+  <!-- About Me section -->
+  <div class="content">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        My name is Alsoltan, and I am the creator of @realalsoltan on TikTok. My mission is simple: to spread kindness, bring people together, and make a positive impact in the lives of those who need it most.
+      </p>
+      <p>
+        Through my platform, I share real stories of giving—whether it’s helping Syrian refugees with yearly rent and food support, providing wheelchairs to people with disabilities, or covering surgery costs for those who cannot afford it.
+      </p>
+      <p>
+        On TikTok, I share videos of these efforts—not for recognition, but to inspire others to give, to care, and to believe in the power of community. I also go live daily, offering a space for entertainment, conversation, and support.
+      </p>
+      <p>
+        At the heart of everything I do is one belief: helping others is not just an act—it’s a way of life. My vision is to continue growing this mission, touching more lives, and building a community grounded in compassion and generosity.
+      </p>
+    </section>
+  </div>
+
+  <!-- Social row -->
+  <div class="social-links">
+    <!-- TikTok left -->
+    <a href="https://www.tiktok.com/@realalsoltan" target="_blank" rel="noopener" class="tiktok">
+      <img src="tiktok.jpg" alt="TikTok">
+    </a>
+
+    <!-- Center text -->
+    <p class="contact-text">To contact me</p>
+
+    <!-- Snapchat right -->
+    <a href="https://www.snapchat.com/@king.alsoltan" target="_blank" rel="noopener" class="snapchat">
+      <img src="snapchat.webp" alt="Snapchat">
+    </a>
+  </div>
+
+</body>
+</html>
